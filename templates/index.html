@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block title %}Index Page{% endblock title %}
+{% block body %}Index Page{% endblock body %}
+
+{% if current_user.is_authenticated %}
+{{current_user.username}}
+{% endif %}
